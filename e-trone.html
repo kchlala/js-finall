@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="vendors/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+<body>
+   
+    <header id="header">
+        <div class="top-header">
+           <i class="fas fa-mobile-alt"></i>
+          <span>+ 8 100 364 57 87</span>
+       </div>
+
+       <div class="bottom-header">
+                 <div class="quat">
+                 <img src="https://quattro.true-emotions.studio/wp-content/themes/quattro/images/logo.svg" alt="">
+             </div>                  
+              <ul class="listing list-unstyled">
+                  <li class="main-li"><a href="main.html" id="main-a" >Home</a> <i class="fas fa-angle-down down"></i>
+                      <ul class="drop-ul list-unstyled" >
+                          <li class="drop-li"><a href="#" id="drop-a" >Auto Dealer </a><i class="fas fa-angle-right right"></i>
+                          <ul class="drop-ul-2 list-unstyled">
+                              <li class="drop-li-2"><a href="#">Home 1 white</a></li>
+                              <li class="drop-li-2"><a href="#">Home 2 white</a></li>
+                              <li class="drop-li-2"><a href="#">Home 3 white</a></li>
+                              <li class="drop-li-2"><a href="#">Home 4 white</a></li>
+                              <li class="drop-li-2"><a href="#">Home 5 white</a></li>
+                              <li class="drop-li-2"><a href="#">Home 6 white</a></li>
+                              <li class="drop-li-2"><a href="#">Home 7 white</a></li>
+                          </ul>
+                          </li>
+                          <li class="drop-li"><a href="#" id="drop-a">Repair & Mechanic</a><i class="fas fa-angle-right right"></i>
+                              <ul class="drop-ul-2 list-unstyled">
+                                  <li class="drop-li-2"><a href="#" >Home 1 white</a></li>
+                                  <li class="drop-li-2"><a href="#">Home 2 white</a></li>
+                                  <li class="drop-li-2"><a href="#">Home 3 white</a></li>
+                                 
+                              </ul></li>
+                          <li class="drop-li"><a href="#" id="drop-a">Rental</a><i class="fas fa-angle-right right"></i>
+                              <ul class="drop-ul-2 list-unstyled">
+                                  <li class="drop-li-2"><a href="#" >Home 1 white</a></li>
+                                  <li class="drop-li-2"><a href="#">Home 2 white</a></li>
+                                  
+                              </ul>
+                          </li>
+                          <li class="drop-li"><a href="#" id="drop-a">Cargo & Transport</a><i class="fas fa-angle-right right"></i>
+                              <ul class="drop-ul-2 list-unstyled">
+                                  <li class="drop-li-2"><a href="#" >Home 1 white</a></li>
+                              </ul>
+                          </li>
+                          <li class="drop-li"><a href="#" id="drop-a">All in one page</a></li>
+                      </ul>
+                  </li>
+                  <li class="main-li"><a href="#" id="main-a">About Us</a></li>
+                  <li class="main-li"><a href="carlisting.html" id="main-a">Cars Listing</a></li>
+                  <li class="main-li"><a href="#" id="main-a">Shop</a></li>
+                  <li class="main-li"><a href="#" id="main-a" class="red-line">Elements</a><i class="fas fa-angle-down down"></i> 
+                     <ul class="drop-ul list-unstyled">
+                         <li class="drop-li"><a href="#" id="drop-a">Buttons</a></li>
+                         <li class="drop-li"><a href="#" id="drop-a">Icons</a></li>
+                         <li class="drop-li"><a href="#" id="drop-a">Post Block</a></li>
+                         <li class="drop-li"><a href="#" id="drop-a">Reviews Block</a></li>
+                     </ul>
+                  </li>
+                  <li class="main-li"><a href="cardesign.html" id="main-a" >Blog</a></li>
+                  <li class="main-li"><a href="#" id="main-a">Contacts</a></li>
+              </ul>
+              <div class="search">
+         <i class="fas fa-search se" id="searchbar-icon" aria-hidden="true"></i>
+              <i class="fas fa-shopping-basket se"></i> <sup>0</sup>  
+                    
+              <div class="ham">
+                      <span class="bars"></span>
+                    </div>                                           
+                       </div> 
+                       <div class="searchbox">
+                          <input type="text" placeholder="Search" onfocus="red">  
+                          <i class="far fa-search sear"></i>
+                          <i class="fas fa-times cross"></i>
+                           </div>  
+                      </div>
+                    
+      
+</header>
+    
+    <section class="car-1">
+            <div class="listing-1">
+                <h1>Audi E-Trone Electric Sportback
+                </h1>
+                <a href="main.html">Home</a> <i class="fas fa-angle-right"></i> <a href="">Rent</a> <i class="fas fa-angle-right"></i> <a href="">Audi</a><i class="fas fa-angle-right"></i> <a href="">E-trone</a>
+            </div>
+    </section>
+    
+        <div class="general-parts-2">
+    <section class="car-2">
+     
+
+<!-- <div class="swiper-container"> -->
+
+      <div class="swiper mySwiper2"
+      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+       >
+      <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide" id="1">
+          <div class="swiper-zoom-container">
+          <img src="photos/1.jpeg" alt="">
+         </div>
+        </div>
+        <div class="swiper-slide" id="2">
+          <div class="swiper-zoom-container">
+              <img src="photos/2.jpeg" alt="">
+          </div>
+
+        </div>
+        <div class="swiper-slide" id="3">
+          <div class="swiper-zoom-container">
+            <img src="photos/3.jpeg" alt="">
+        </div>
+        </div>
+        <div class="swiper-slide" id="4">
+          <div class="swiper-zoom-container">
+            <img src="photos/4.jpeg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide" id="5">
+          <div class="swiper-zoom-container">
+          <img src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/452.jpg" />
+          </div>
+        </div>
+        <div class="swiper-slide" id="6">
+          <div class="swiper-zoom-container">
+          <img src="https://quattro.true-emotions.studio/wp-content/uploads/2021/02/bmw2.jpg" />
+          </div>
+        </div>
+      </div>
+      <div id="next" class="swiper-button-next"></div>
+      <div id="prev" class="swiper-button-prev"></div>
+    </div>
+    <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/maximize.svg" class="maximize" alt="">
+
+    <div id="fullscreen-swiper">
+
+      <i class="fal fa-times times"></i>
+      <i class="fas fa-share share" onclick="myFunction()"></i>
+      <div class="chat">
+        <a href="https://www.facebook.com" target="_blank" >Share on Facebook</a>
+        <a href="https://twitter.com" target="_blank">Tweet</a>
+        <a href="https://www.pinterest.com">Pinterest</a>
+      </div>
+    </div>
+
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="photos/1.jpeg" alt="">
+
+        </div>
+        <div class="swiper-slide">
+            <img src="photos/2.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="photos/3.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="photos/4.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/452.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://quattro.true-emotions.studio/wp-content/uploads/2021/02/bmw2.jpg" />
+        </div>
+      
+      </div>
+    </div>
+  
+    
+  <!-- </div> -->
+
+
+        <div class="little-gray">
+            <div class="little-icons">
+                <div class="one-icon">
+                    <div class="one">
+            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/event.svg" alt="">
+            <span>Year: </span> <strong>2020</strong>
+            </div>
+            <div class="one">
+                <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/road.svg" alt="">
+                <span>Mileage:</span> <strong>5</strong>
+                </div>
+                <div class="one">
+                    <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/049-gasoline-1.svg" alt="">
+                    <span>Fuel: </span> <strong>Electric</strong>
+                    </div>
+                    <div class="one">
+                        <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/013-gearshift-2.svg" alt="">
+                        <span>Transmission:</span> <strong>Automatic</strong>
+                        </div>
+                        <div class="one">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/031-engine.svg" alt="">
+                            <span>Engine: </span> <strong>2100</strong>
+                            </div>
+                            <div class="one">
+                                <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/horseshoe.svg" alt="">
+                                <span>Horsepower: </span> <strong>150</strong>
+                                </div>
+                </div>
+                <div class="one-icon">
+                    <div class="one">
+            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/torque.svg" alt="">
+            <span>Torque: </span> <strong>300</strong>
+            </div>
+            <div class="one">
+                <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/051-car-door-1.svg" alt="">
+                <span>Doors:</span> <strong>4</strong>
+                </div>
+                <div class="one">
+                    <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/negotiation.svg" alt="">
+                    <span>Price Type: </span> <strong>Fixed</strong>
+                    </div>
+                    <div class="one">
+                        <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/garage.svg" alt="">
+                        <span>Stock Status:</span> <strong>In stock</strong>
+                        </div>
+                        <div class="one">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/ribbon.svg" alt="">
+                            <span>Condition: </span> <strong>Used</strong>
+                            </div>
+                          
+                </div>
+                <div class="one-icon">
+                    <div class="one">
+            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/070-car-painting.svg" alt="">
+            <span>Color: </span> <strong>yellow</strong>
+            </div>
+            <div class="one">
+                <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/053-chassis.svg" alt="">
+                <span>Drivetrain:</span> <strong>AWD</strong>
+                </div>
+                <div class="one">
+                    <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/gas-pump.svg" alt="">
+                    <span>MPG: </span> <strong>5 Hwy / 9 City</strong>
+                    </div>
+                    <div class="one">
+                        <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/013-gearshift-2.svg" alt="">
+                        <span>Transmission:</span> <strong>Automatic</strong>
+                        </div>
+                        <div class="one">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/031-engine.svg" alt="">
+                            <span>Engine: </span> <strong>2100</strong>
+                            </div>
+                    
+                </div>
+                <div class="one-icon" id="pdf" style=" margin-right: 0px; float: right; width: 22%;">
+                    <div class="one" style="float: right;" >
+                    <a href="">pdf</a>
+                    <i class="far fa-file-pdf"></i>
+                </div>
+                  <br>
+                    <button class="dollar">
+                        <a href="" class="qirxiki">$42,000</a>
+                        <a href="" class="book">Booking</a>
+                      </button>
+                </div>
+            </div>
+            <div class="rental" id="rent2">
+                <h5>Rental period</h5>
+                <p>1-3 days</p>
+                <p>4-14 days</p>
+                <p>15-29 days</p>
+                <p>30+ days</p>
+            </div>
+            <div class="rental" id="rent">
+                <h5>Price per day  </h5>
+                <p>$55</p>
+                <p>$115</p>
+                <p>$135</p>
+                <p>$190</p>
+            </div>
+
+  <div class="audi-e-trone">
+      <h3>Audi E-Trone Electric Sportback</h3>
+      <div class="audis">
+      <div class="one-audi">
+          <span class="pr">Price</span>
+          <h5>$42,000</h5>
+          <span class="tax">Tax included</span>
+      </div>
+      <div class="one-audi">
+        <span class="pr">Warranty</span>
+        <h5>No</h5>
+    </div>
+    <div class="one-audi">
+        <span class="pr">Guarantee</span>
+        <h5>5 years</h5>
+        <span class="tax">24 Month</span>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+                </div>
+
+                <div class="tabs">
+                    <input type="radio" name="tabs" id="tabone" checked="checked">
+                    <label for="tabone">OVERVIEW</label>
+                    <div class="tab">
+                    <p>Magna aenean sapien varius at fringilla lobortis, donec incidunt, pellentesque nam turpis vestibulum eleifend. Est tempor ut at ut mauris lectus, laoreet dapibus commodo dignissim et, elit risus sed magna urna tincidunt neque, mauris torquent amet diam arcu enim massa, vehicula nisl malesuada. Neque eget sed, pede pellentesque amet, purus praesent pulvinar scelerisque enim mi vestibulum.</p>
+                  <p>Montes est fringilla vestibulum nonummy commodo, imperdiet sit, wisi consectetuer, et wisi orci. Nunc rutrum elit amet at dui. Volutpat nec pulvinar nullam, eu lectus elementum fusce, id esse. Pretium vehicula, amet egestas adipiscing et dolor at, dui purus diam diam lorem aliquam pede, lectus in neque vitae augue condimentum fringilla. Lobortis risus augue scelerisque.</p>
+                    
+                  <ul class="accordion-list">
+                    <li>
+                      <h3>Crediting system</h3>
+                      <div class="answer">
+                     <p>Metus quam cras vehicula ante, potenti eget. Vel est integer, vivamus proin torquent, sodales aliquam tincidunt laoreet est, at in sollicitudin laoreet etiam sit suspendisse, ligula ut vestibulum dapibus et neque. Nibh et risus ipsum amet pede, eros arcu non, velit ridiculus elit, mauris cursus et. Vel cursus sagittis sem nullam odio pede.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <h3>Interior specificity</h3>
+                      <div class="answer">
+                        <p>Metus quam cras vehicula ante, potenti eget. Vel est integer, vivamus proin torquent, sodales aliquam tincidunt laoreet est, at in sollicitudin laoreet etiam sit suspendisse, ligula ut vestibulum dapibus et neque. Nibh et risus ipsum amet pede, eros arcu non, velit ridiculus elit, mauris cursus et. Vel cursus sagittis sem nullam odio pede.</p>
+                         </div>
+                    </li>
+                    <li>
+                      <h3>Exteriour specificity</h3>
+                      <div class="answer">
+                        <p>Metus quam cras vehicula ante, potenti eget. Vel est integer, vivamus proin torquent, sodales aliquam tincidunt laoreet est, at in sollicitudin laoreet etiam sit suspendisse, ligula ut vestibulum dapibus et neque. Nibh et risus ipsum amet pede, eros arcu non, velit ridiculus elit, mauris cursus et. Vel cursus sagittis sem nullam odio pede.</p>
+                         </div>
+                    </li>
+                    <li>
+                      <h3>Innovative technologies</h3>
+                      <div class="answer">
+                        <p>Metus quam cras vehicula ante, potenti eget. Vel est integer, vivamus proin torquent, sodales aliquam tincidunt laoreet est, at in sollicitudin laoreet etiam sit suspendisse, ligula ut vestibulum dapibus et neque. Nibh et risus ipsum amet pede, eros arcu non, velit ridiculus elit, mauris cursus et. Vel cursus sagittis sem nullam odio pede.</p>
+                         </div>
+                    </li>
+                    <li>
+                      <h3>Security & control systems</h3>
+                      <div class="answer">
+                        <p>Metus quam cras vehicula ante, potenti eget. Vel est integer, vivamus proin torquent, sodales aliquam tincidunt laoreet est, at in sollicitudin laoreet etiam sit suspendisse, ligula ut vestibulum dapibus et neque. Nibh et risus ipsum amet pede, eros arcu non, velit ridiculus elit, mauris cursus et. Vel cursus sagittis sem nullam odio pede.</p>
+                         </div>
+                    </li>
+                    
+                   
+                  </ul>
+                
+                </div>
+                    
+                    <input type="radio" name="tabs" id="tabtwo">
+                    <label for="tabtwo">FEATURES</label>
+                    <div class="tab">
+                        <div class="tab-flex">
+                     <div class="tab-one">
+                         <div class="one-x">
+                             <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                             <span>Alarm system</span>
+                         </div>
+                         <div class="one-x">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                            <span>Auxiliary heating</span>
+                        </div>
+                        <div class="one-x">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                            <span>Automatic air conditioning</span>
+                        </div>
+                        <div class="one-x">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                            <span>Automatic climatisation</span>
+                        </div>
+                        <div class="one-x">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                            <span>Bi-xenon headlights</span>
+                        </div>
+                        <div class="one-x">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                            <span>Bluetooth</span>
+                        </div>
+                        <div class="one-x">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                            <span>Central locking</span>
+                        </div>
+                    </div>
+                    <div class="tab-one">
+                        <div class="one-x">
+                            <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                            <span>Cloth seats</span>
+                        </div>
+                        <div class="one-x">
+                           <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                           <span>Electric heated seats</span>
+                       </div>
+                       <div class="one-x">
+                           <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                           <span>Electric side mirror</span>
+                       </div>
+                       <div class="one-x">
+                           <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                           <span>Electric windows </span>
+                       </div>
+                       <div class="one-x">
+                           <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                           <span>Fold flat passenger seat </span>
+                       </div>
+                       <div class="one-x">
+                           <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                           <span>Hands-free kit</span>
+                       </div>
+                       <div class="one-x">
+                           <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                           <span>Head-up display</span>
+                       </div>
+                   </div>
+                   <div class="tab-one">
+                    <div class="one-x">
+                        <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                        <span>Electric heated seats</span>
+                    </div>
+                    <div class="one-x">
+                       <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                       <span>Cloth seats</span>
+                   </div>
+                   <div class="one-x">
+                       <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                       <span>Navigation system</span>
+                   </div>
+                   <div class="one-x">
+                       <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                       <span>LED headlights</span>
+                   </div>
+                   <div class="one-x">
+                       <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                       <span>Laser headlights</span>
+                   </div>
+                   <div class="one-x">
+                       <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                       <span>Bluetooth</span>
+                   </div>
+                   <div class="one-x">
+                       <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                       <span>On-board computer</span>
+                   </div>
+               </div>
+               <div class="tab-one">
+                <div class="one-x">
+                    <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                    <span>Rain sensor</span>
+                </div>
+                <div class="one-x">
+                   <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                   <span>Ski bag </span>
+               </div>
+               <div class="one-x">
+                   <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                   <span>Sports package</span>
+               </div>
+               <div class="one-x">
+                   <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                   <span>Start-stop system</span>
+               </div>
+               <div class="one-x">
+                   <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/cancel-circle.svg" alt="">
+                   <span>Sunroof</span>
+               </div>
+               <div class="one-x">
+                   <img src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/check-circle.svg" alt="">
+                   <span>Xenon headlights</span>
+               </div>
+    
+           </div>
+                     </div>
+                     
+                    </div>
+                    
+                    <input type="radio" name="tabs" id="tabthree">
+                    <label for="tabthree">CONTACTS</label>
+                    <div class="tab">
+                        <p>Est tempor ut at ut mauris lectus, laoreet dapibus commodo dignissim et, elit risus sed magna urna tincidunt neque, mauris torquent amet diam arcu enim massa, vehicula nisl malesuada. Neque eget sed, pede pellentesque amet, purus praesent pulvinar scelerisque enim mi vestibulum.</p>
+                    </div>
+                  </div>
+    </section>
+  
+
+<div class="part-2">
+    <div class="part-2-1">
+    <div class="top-part">
+      <h2>Cars Filter</h2>
+      <img
+        src="https://quattro.true-emotions.studio/wp-content/themes/quattro/images/decor.svg"
+        alt="" />
+    </div>
+   <div class="buttons" id="buttons">
+    <div class="custom-select" >
+        <p>Make</p>
+      <select>
+        
+        <option value="0">All Makes</option>
+        <option value="1">Audi</option>
+        <option value="2">BMW</option>
+        <option value="3">Fiat</option>
+        <option value="4">Renault</option>
+        <option value="5">Hyundai</option>
+        <option value="6">Ferrari</option>
+      </select>
+    </div>
+
+ 
+    <div class="custom-select" >
+        <p>Condition</p>
+      <select>
+        <option value="0">All Conditions</option>
+        <option value="1">New</option>
+        <option value="2">Used</option>
+      </select>
+    </div>
+    
+  
+  </div>
+  <p class="p mb-3" >Year</p>
+  <div class="col-lg-12 mb-4" >
+    <div class="slider-range" data-min="2000" data-max="2021" data-step="1" data-left="2000"
+        data-right="2021"></div>
+</div>
+<p class="p mb-3">Price</p>
+<div class="col-lg-12 mb-5" >
+  <div class="slider-range" data-min="0" data-max="100000" data-step="1" data-left="$0"
+      data-right="$100000"></div>
+</div>
+
+<div class="chs">
+    <p>Body Types</p>
+    <div class="ch">
+      <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+      <label for="checkbox-1" class="checkbox-custom-label">Coupe</label>
+    </div>
+    <div class="ch">
+      <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+      <label for="checkbox-2" class="checkbox-custom-label">Minivan</label>
+    </div>
+    <div class="ch">
+      <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+      <label for="checkbox-3"class="checkbox-custom-label">Sedan</label>    
+      </div>
+    <div class="ch">
+        <input id="checkbox-4" class="checkbox-custom" name="checkbox-3" type="checkbox">
+        <label for="checkbox-4"class="checkbox-custom-label">Sport Car</label>    
+        </div>
+    <div class="ch">
+        <input id="checkbox-5" class="checkbox-custom" name="checkbox-3" type="checkbox">
+        <label for="checkbox-5"class="checkbox-custom-label">Super Car</label>    
+        </div>
+    <div class="ch">
+          <input id="checkbox-6" class="checkbox-custom" name="checkbox-3" type="checkbox">
+          <label for="checkbox-6"class="checkbox-custom-label">SUV</label>    
+          </div>
+    </div>
+
+
+<div class="buttons" id="buttons">
+<div class="custom-select" >
+    <p>Fuel</p>
+<select>
+  <option value="0">All Fuel types</option>
+  <option value="1">Diesel</option>
+  <option value="2">Petrol</option>
+</select>
+</div>
+<div class="custom-select" >
+    <p>Locations</p>
+    <select>
+      <option value="0">All Locations</option>
+      <option value="1">New York</option>
+      <option value="2">LA</option>
+    
+     
+    </select>
+    </div>
+</div>
+
+<button class="redhv">
+    Show Cars 
+</button>
+
+</div>
+<div class="part-3">
+    <div class="top-part">
+        <h2>Related Cars</h2>
+        <img
+          src="https://quattro.true-emotions.studio/wp-content/themes/quattro/images/decor.svg"
+          alt="" />
+          <span>You may be interested</span>
+      </div>
+      <div class="many-cars">
+          <div class="car-blocks">
+              <img src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/mercedes61-760x460.jpg" alt="">
+              <a href="" class="mercedes">Mercedes Benz Coupe Gt</a>
+              <div class="little-words">
+                  <a href="" class="myprice">$235,000</a>
+                  <img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/event.svg" alt="">
+<span>2018</span>
+<img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/road.svg" alt="">
+<span>0</span>
+              </div>
+          </div>
+          <div class="car-blocks">
+              <img src="https://quattro.true-emotions.studio/wp-content/uploads/2018/11/Mercedes-Benz-CLS-450-AMG-Line-Edition-1-2018-1680x1050-003-760x460.jpg" alt="">
+            <a href="" class="mercedes">Mercedes-Benz CLS</a>
+            <div class="little-words">
+                <a href="" class="myprice">$22,000</a>
+                <img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/event.svg" alt="">
+<span>2017</span>
+<img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/road.svg" alt="">
+<span>1000</span>
+            </div>
+        </div>
+        <div class="car-blocks">
+            <img src="https://quattro.true-emotions.studio/wp-content/uploads/2018/09/TT-8S-new-open-760x460.jpg" alt="">
+          <a href="" class="mercedes">Audi TT</a>
+          <div class="little-words">
+              <img class="limg" style="margin-left: 0px;" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/event.svg" alt="">
+<span>2015</span>
+<img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/road.svg" alt="">
+<span>30000</span>
+          </div>
+      </div>
+      <div class="car-blocks">
+          <img src="https://quattro.true-emotions.studio/wp-content/uploads/2021/02/tesla2-760x460.jpg" alt="">
+      <a href="" class="mercedes">BMW Electric Coupe Model A</a>
+      <div class="little-words">
+          <a href="" class="myprice">$30,000</a>
+          <img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/event.svg" alt="">
+<span>2020</span>
+<img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/road.svg" alt="">
+<span>5</span>
+      </div>
+  </div>
+  <div class="car-blocks">
+      <img src="https://quattro.true-emotions.studio/wp-content/uploads/2018/11/M3-760x460.jpg" alt="">
+<a href="" class="mercedes">BMW M3 Xdrive</a>
+<div class="little-words">
+    <a href="" class="myprice">$40,000</a>
+    <img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/event.svg" alt="">
+<span>2017</span>
+<img class="limg" src="https://quattro.true-emotions.studio/wp-content/plugins/pix-cars/assets/images/fields/road.svg" alt="">
+<span>10</span>
+</div>
+</div>
+      </div>
+    
+</div>
+  </div>
+</div>
+<footer id="footer">
+    <div class="top-footer">
+        <div class="cnt ">
+        <div class="about-us">
+            <h1>About Us</h1>
+            <img src="https://quattro.true-emotions.studio/wp-content/themes/quattro/images/decor.svg" alt="">
+            <p> Address: 685 Lane Drive St. <br>
+                California, Auto club 33020 <br>
+                Phone: +010 234 7892 34 <br>
+                Fax: +010 234 7892 34 <br>
+                E-mail: <a href="#" class="mail">info@quattro.com</a>  </p>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-f face"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+        </div>
+        <div class="mylist">
+            <ul class="list-unstyled">
+                <li><a href="">Home</a></li>
+                <li><a href="">Cars Listing</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="news">
+            <h1>News</h1>
+            <img src="https://quattro.true-emotions.studio/wp-content/themes/quattro/images/decor.svg" alt="">
+            <div class="all-a">
+            <a href="#" class="simp">February 20, 2021</a>
+            <div class="feb">
+            <i class="fal fa-angle-right"></i>
+            <a href="" class="under">Quasi architecto beatae vitae dicta sunt explicabo
+            </a>
+           </div>
+           <a href="#" class="simp">February 20, 2021</a>
+           <div class="feb">
+            <i class="fal fa-angle-right"></i>
+            <a href="" class="under">Natus error sit voluptatem accusantium doloremque laudantium
+            </a>
+           </div>
+    
+            <a href="#" class="simp">February 20, 2021</a> <br>
+           <div class="feb">
+            <i class="fal fa-angle-right"></i>
+            <a href="" class="under">Ullamcorper amet feugiat wisi id metus, ultrices mauris in mattis
+            </a>
+           </div>
+        </div>
+          
+        </div>
+        <div class="question">
+            <h1>Question</h1>
+            <img src="https://quattro.true-emotions.studio/wp-content/themes/quattro/images/decor.svg" alt="">
+            <div class="inputs">
+            <input type="text" placeholder="Name*">
+            <input type="text" placeholder="Phone">
+            <input type="email" placeholder="Enter message" style="padding-bottom: 80px;">
+           </div>
+            <button> send
+            </button>
+        </div>
+    </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="cnt ">
+            <div class="spans">
+        <span>© 2008-2021</span>
+        <span style="color: #bbbbbb;"> Quattro Team Inc</span>
+    </div>
+    <div class="users">
+        <ul class="d-flex list-unstyled ">
+            <li><a href="">User agreement</a></li>
+            <li><a href="">Request</a></li>
+            <li><a href="">Ask a question</a></li>
+            <li><a href="">Offer an idea</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    </footer>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+  <script src="vendors/js/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/headerfooter.js"></script>
+<script src="js/trone.js"></script>
+
+
+</body>
+</html>
