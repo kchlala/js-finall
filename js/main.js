@@ -1,8 +1,93 @@
-$(document).ready(function () {
-    setTimeout(function () {
-        $('#page-preloader').hide();
-    }, 0);
-});
+
+
+
+
+(function($) {
+    $.fn.countTo = function(options) {
+      // merge the default plugin settings with the custom options
+      options = $.extend({}, $.fn.countTo.defaults, options || {});
+  
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(options.speed / options.refreshInterval),
+        increment = (options.to - options.from) / loops;
+  
+      return $(this).each(function() {
+        var _this = this,
+          loopCount = 0,
+          value = options.from,
+          interval = setInterval(updateTimer, options.refreshInterval);
+  
+        function updateTimer() {
+          value += increment;
+          loopCount++;
+          $(_this).html(value.toFixed(options.decimals));
+  
+          if (typeof(options.onUpdate) == 'function') {
+            options.onUpdate.call(_this, value);
+          }
+  
+          if (loopCount >= loops) {
+            clearInterval(interval);
+            value = options.to;
+  
+            if (typeof(options.onComplete) == 'function') {
+              options.onComplete.call(_this, value);
+            }
+          }
+        }
+      });
+    };
+  
+  })(jQuery);
+  
+  jQuery(function($) {
+    $('.timer').countTo({
+      from:0,
+      to: 50,
+      speed: 5000,
+      refreshInterval: 50,
+      onComplete: function(value) {
+        console.debug(this);
+      }
+    });
+  });
+  jQuery(function($) {
+    $('.timer-1').countTo({
+      from:0,
+      to: 600,
+      speed: 5000,
+      refreshInterval: 50,
+      onComplete: function(value) {
+        console.debug(this);
+      }
+    });
+  });
+  jQuery(function($) {
+    $('.timer-2').countTo({
+      from:0,
+      to: 34,
+      speed: 5000,
+      refreshInterval: 50,
+      onComplete: function(value) {
+        console.debug(this);
+      }
+    });
+  });
+  jQuery(function($) {
+    $('.timer-3').countTo({
+      from:0,
+      to: 95,
+      speed: 5000,
+      refreshInterval: 50,
+      onComplete: function(value) {
+        console.debug(this);
+      }
+    });
+  });
+
+
+
+
 
 class TextAnimate {
     constructor(elem) {

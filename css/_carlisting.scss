@@ -12,26 +12,6 @@
     background-size: cover;
     background-position: 50% 10%;
   
-    .listing-1 {
-      width: 90%;
-      margin: auto;
-      h1 {
-        color: white;
-        margin-bottom: 24px;
-        font-family: "Ubuntu", sans-serif;
-        font-size: 32px;
-      }
-      a {
-        color: rgb(172, 169, 169);
-        font-size: 16px;
-        font-family: "Lato", sans-serif;
-        transition: 0.3s ease-in-out;
-        &:hover {
-          color: #ff3837;
-          text-decoration: none;
-        }
-      }
-    }
   }
   .general-part {
     width: 90%;

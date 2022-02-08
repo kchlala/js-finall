@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -22,7 +23,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a id="button">
+        <i class="far fa-arrow-alt-circle-up"></i>
+    </a>
 
+    <div id="page-preloader">
+        <div class="pix-pulse"></div>
+    </div>
+
+    <div id="mouse-circle"></div>
     <header id="header">
         <div class="top-header">
            <i class="fas fa-mobile-alt"></i>
@@ -103,7 +112,7 @@
     
     <section class="car-1">
             <div class="listing-1">
-                <h1>Facilisis ut condimentum condimentum lectus
+                <h1 class="ml12">Facilisis ut condimentum condimentum lectus
                 </h1>
                 <a href="main.html">Home</a> <i class="fas fa-angle-right"></i> <a href="">Car Design</a>
             </div>
@@ -151,12 +160,14 @@
     <i class="fab fa-google"></i>
 </div>
 <div class="prev-next">
-    <div class="prev-21">
+    <div class="prev-21" data-aos="fade-left" data-aos-delay="30"
+    data-aos-duration="1000">
         <p>previous</p>
         <i class="far fa-angle-left"></i> 
         <a href="">Sapien enim curabitur etiam ultricies consectetuer sit</a>
     </div>
-    <div class="prev-212">
+    <div class="prev-212" data-aos="fade-right" data-aos-delay="30"
+    data-aos-duration="1000">
         <p>next</p>     
         <a href=""> Ullamcorper amet feugiat wisi id metus, ultrices mauris in <i class="far fa-angle-right"></i>  <br> mattis
         </a>
@@ -164,13 +175,13 @@
     </div>
 </div>
 
-<div id="reply">
+<div id="reply" >
 <h3>Leave a Reply</h3>
 <p>Your email address will not be published. Required fields are marked *
 </p>
 <div id="inputs">
 
-    <div class="i1">
+    <div class="i1" >
     <label class="l1" id="1" for="">Name *</label>
     <input class="lit" onclick="showOne('1')" type="text" placeholder="Name *">
    </div>
@@ -192,7 +203,7 @@
 
     
 
-    <button>Post Comment</button>
+    <button >Post Comment</button>
 
 
 
@@ -397,9 +408,17 @@
         </div>
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <script src="vendors/js/jquery-3.6.0.min.js"></script>
 <script src="js/cardesign.js"></script>
 <script src="js/headerfooter.js"></script>
+<script src="js/all.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

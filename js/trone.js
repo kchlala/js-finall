@@ -1,6 +1,5 @@
 
 
-
 $(document).ready(function(){
 	$('.accordion-list > li > .answer').hide();
 	$('.accordion-list > li').click(function() {

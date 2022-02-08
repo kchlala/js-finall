@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $('.img-all').hover(function () {
       $(this).parent('.all-images').find('.img-all-1').addClass('white');

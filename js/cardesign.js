@@ -5,6 +5,8 @@ $('.bo1 input').click(function() {
   });
 });
 
+
+
 const inputsearch = document.querySelector(".bo1 input")
 document.addEventListener("click", function(event) {
   if (event.target.closest(".bo1 input")) return
